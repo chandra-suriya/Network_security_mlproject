@@ -99,6 +99,9 @@ class DataTransformation:
                 transformed_train_file_path=self.data_transformation_config.transformed_train_file_path,
                 transformed_test_file_path=self.data_transformation_config.transformed_test_file_path
             )
+            save_object( self.data_transformation_config.transformed_object_file_path, preprocessor_obj,)
+
+            save_object( "final_model/preprocessor.pkl", preprocessor_obj,)
             return data_transformation_artifact
             
         except Exception as e:
