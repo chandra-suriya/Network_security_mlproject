@@ -4,3 +4,4 @@ logs
 Artifacts
 _pycache_
 check_connection.py
+mlruns
